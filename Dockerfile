@@ -34,5 +34,5 @@ RUN make install
 # docker run -t -i filezilla
 
 # $ docker ps | grep filezilla | awk '{ print $1 }'
-019b4ba41a73
+# 019b4ba41a73
 # $ rm -rf out ; docker cp 019b4ba41a73:/out out
