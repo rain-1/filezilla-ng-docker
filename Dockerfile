@@ -24,6 +24,7 @@ WORKDIR /app
 ADD filezilla-ng /app
 RUN autoreconf -i
 ENV PKG_CONFIG_PATH /usr/lib/pkgconfig/:/out/lib/pkgconfig
+ENV LIBFILEZILLA_LIBS /out/lib/libfilezilla.a
 RUN ./configure --prefix=/out
 RUN make
 RUN make install
