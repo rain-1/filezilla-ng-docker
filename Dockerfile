@@ -29,8 +29,6 @@ RUN make
 RUN make install
 
 # docker build -t filezilla .
-# rm -rf out ; docker cp libfilezilla-docker:/out out
-
 # docker run -t -i filezilla
 
 # $ docker ps | grep filezilla | awk '{ print $1 }'
